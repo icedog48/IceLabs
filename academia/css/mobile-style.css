@@ -2,26 +2,64 @@ body {
     margin: 0px;
 }
 
-header {
-    background-image: url('../img/header_background.jpg');
-    background-clip: content-box;
-    background-origin: content-box;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-/*Titulo da pagina*/
-header h1 {
-    text-align: center;
-    color: white;
-}
-
-#content{	
-	background-color: lightslategrey;
-}
-
 header{
     width: 100%;
     height: 100%;
-    background-color: yellowgreen;
+}
+
+.header-background{    
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header-background::after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/background.jpg');
+    width: 100%;
+    height: 100%;
+    opacity : 0.6;
+    z-index: -1;
+}
+
+/*Titulo da pagina*/
+header h1 {    
+    color: white;
+    text-align: center;
+    font-family: Papyrus, fantasy;
+	font-size: 9.0vw;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 10.0vh;
+    text-transform: uppercase;
+    padding-top: 10vw;
+}
+
+#sections-menu {
+    font-size: 4vw;
+    text-align: center;
+}
+
+#sections-menu .nav-bar { list-style:none; margin-top: 3.5vw; }
+#sections-menu .nav-bar li { display:inline; padding:0 3vw; }
+
+#sections-menu .nav-bar {
+    list-style:none;
+    padding: 0px;
+}
+
+#sections-menu .nav-bar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+#content{	
+	
 }
